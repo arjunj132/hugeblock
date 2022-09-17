@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         hugeblock
-// @version      1.1
+// @version      1.2
 // @description  hugeblock for TamperMonkey - a adblocker
 // @author       Arjun J
 // @match        *://*/*
@@ -9,6 +9,7 @@
 // @namespace https://greasyfork.org/users/960153
 // ==/UserScript==
  
+
  
 // This folllowing code is edited (a lot) from https://gist.github.com/kbauer/b524f6475c153e759dc28314175cd6a7 (AdBlock Simple)
 console.log("========== hugeblock ==========")
@@ -24,7 +25,7 @@ function remIF(e){
     // Edited AdBlock Simple
     if (origins.includes(e.src.replace("https://", "").replace("http://", "").replace("www.", ""))){
         console.log("removing " + e.src.replace("https://", "").replace("http://", "").replace("www.", ""))
-        e.src = "about:blank";
+        e.src = "https://images.unsplash.com/photo-1484591974057-265bb767ef71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80";
     }
 }
 function remIFs(){
@@ -60,7 +61,8 @@ function remIFs(){
         for(let i = 0; i < nodesList.length; i++) {
             let el = nodesList[i];
             if(el && el.parentNode) {
-                el.parentNode.removeChild(el);
+                
+                el.innerHTML = `<img src="https://images.unsplash.com/photo-1484591974057-265bb767ef71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" width="${el.offsetWidth}" height="${el.offsetHeight}">`;
             }
         }
     }
