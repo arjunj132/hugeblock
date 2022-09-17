@@ -1,5 +1,5 @@
 # HugeBlock
-A strong adblocker.
+A strong adblocker. Note that it may block some non-ad iframes.
 
 
 
