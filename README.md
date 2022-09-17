@@ -6,7 +6,7 @@ A strong adblocker.
 ## Install using GitHub
 1. Install TamperMonkey as a extension in your browser
 2. Install hugeblock: https://github.com/arjunj132/hugeblock/raw/main/userscript/hugeblock.user.js
-3. Install youtube ad blocker: https://youtube.arjunjakkipally.repl.co/skipad.user.js
+3. Install youtube ad blocker - optional: https://youtube.arjunjakkipally.repl.co/skipad.user.js
 
 ## Install using GreasyFork
 1. Install TamperMonkey as a extension in your browser.
