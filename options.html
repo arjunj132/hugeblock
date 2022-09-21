@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="popup.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <title>Options</title>
+  </head>
+  <body>
+      <h1>HugeBlock - Options</h1>
+      <h3>Advanced and personalizable adblocking</h3>
+      <h2>Adblocking systems</h2>
+      <p>To toggle our adblocking systems (reload page after changing):</p>
+      <p id="sus" style="cursor: pointer;">Remove sus iframes - <span id="istat">On</span></p>
+      <p id="tag" style="cursor: pointer;">Remove ad tags - <span id="istatt">On</span></p>
+      <h2>Personalize</h2>
+      <p id="img" style="cursor: pointer;">No image - <span id="istattt">Off</span></p>
+      <label for="name">Image URL: </label>
+      <input placeholder="Enter URL" name="name" style="font-family: inherit; width: 100%;"/>
+      
+      <h2>Test</h2>
+      <p>If you see a image or nothing under this text, HugeBlock is working fine (it takes a second):</p>
+      <div class="ad"><iframe srcdoc="If you can see this, HugeBlock is not on, not working, or you disabled remove ad tags" frameborder = "0"></iframe><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></div>
+      <h2>More info:</h2>
+      <a href="https://github.com/arjunj132/hugeblock"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="50"></a><a href="https://github.com/arjunj132/hugeblock/raw/main/userscript/hugeblock.user.js"><img src="https://github.com/Tampermonkey.png" width="50"></a><a href="https://greasyfork.org/en/scripts/451500-hugeblock"><img src="https://greasyfork.org/packs/media/images/blacklogo96-b2384000fca45aa17e45eb417cbcbb59.png" width="50"></a>
+      <h2>Notes:</h2>
+      <pre><b>IMPORTANT: This adblocker was made for systems that cannot handle ads properly and cannot handle the amount of resources the ads have. To support the people who made that page, PLEASE TURN OFF THE ADBLOCKER IF YOU CAN. The ads are thier source of income, and they worked hard to make the website. Adblockers can be taken for granted, and they are amazing resources, but if the ads are not that annoying, please turn off the adblocker.</b>
+
+This adblocker was made by Arjun J. This is not a wide-spectrum blocker, this is just a adblocker. I recommended using this with uBlock Origin (a wide-spectrum blocker) for extra security (this does not use easylist, so it will work).
+
+<img src="logo.png" style="float: left;"><span style="font-size: 130px;">&nbsp;&nbsp;HugeBlock <span id="version"></span></span>
+<span style="font-size: 25px;">(c) 2022 Arjun J. All Rights Reserved.</span>
+
+
+
+
+
+MIT License
+
+Copyright (c) 2022 Arjun Jakkipally
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre>
+      <!-- Inject adblocker to page -->
+      <script src="inject.js"></script>
+      <!--Options change script:-->
+      <script src="options.js"></script>
+  </body>
+</html>
